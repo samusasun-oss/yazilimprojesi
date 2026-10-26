@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batum Elektrik - Montaj Malzemeleri</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.bundle.js"></script>
+    <link rel="icon" type="image/png" href="Resimler/LOGO2.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            margin: 0;
+            background: #333;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        .navbar-dark {
+            background-color: #333;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            margin: 0 8px;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+
+        .navbar-brand span {
+            color: #ffc107;
+            font-weight: bold;
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+        }
+
+        .card {
+            transition: all 0.3s ease;
+            transform: translateY(0);
+            background-color: #444;
+            color: white;
+            border: none;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(255, 196, 0, 0.3);
+            z-index: 2;
+        }
+
+        .card-img-top {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 10px;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .whatsapp:hover {
+            background-color: #1ebe5b;
+            color: white;
+        }
+
+        #loadingOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            font-size: 2rem;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex: 1 0 auto;
+        }
+
+        footer {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loadingOverlay">
+        <div class="spinner-border text-warning" role="status">
+            <span class="visually-hidden">Yükleniyor...</span>
+        </div>
+    </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark slide-down" id="animatedNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="Resimler/LOGO2.png" alt="Batum Elektrik" height="60" class="me-2">
+                <!--Hocam Resmi Yapay Zekaya Yaptırdım-->
+                <span>BATUM ELEKTRİK</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">ANASAYFA</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="hizmetlerDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            HİZMETLERİMİZ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="hizmetlerDropdown">
+                            <li><a class="dropdown-item" href="elektriktesisat.html">Elektrik Tesisatı</a></li>
+                            <li><a class="dropdown-item" href="aob.html">Arıza, Onarım, Bakım</a></li>
+                            <li><a class="dropdown-item" href="#">İnşaat Projeleri & Taahhüt yap</a></li>
+                        </ul>
+                    </li>
+
+                
+                </ul>
+
+                <div class="d-flex align-items-center gap-2">
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <hr style="color: white;">
+
+    <div class="container my-5" id="Ürünlerimiz">
+        <h2 class="text-center mb-4">Montaj Malzemeleri</h2>
+        <div class="row g-4">
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="Resimler/siemens.jpg" class="card-img-top" alt="Malzeme 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><img style="width: 60px; height: 15px;"
+                                src="Resimler/Siemens-Logo.wine.png">
+                            <br> SİEMENS
+                        </h5>
+                        <p class="card-text">Ücret: 350 TL</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="Resimler/legrandsigorta.jpg" class="card-img-top" alt="Malzeme 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><img style="width: 60px; height: 15px;" src="Resimler/legrand.png">
+                            <br>
+                            LEGRAND
+                        </h5>
+                        <p class="card-text">Ücret: 290 TL</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="https://online.gunsanelectric.com/idea/hv/60/myassets/products/762/os3b160-25.jpg?revision=1760445915"
+                        class="card-img-top" alt="Malzeme 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><img style="width: 60px; height: 15px ;" src="Resimler/gunsan-mw8ob.jpg">
+                            <br>
+                            GÜNSAN
+                        </h5>
+                        <p class="card-text">Ücret: 250 TL</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="Resimler/scneheider sigorta.jpg" class="card-img-top" alt="Malzeme 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><img style="width: 60px; height: 15px; " src="Resimler/scanaider.jpg">
+                            <br>
+                            SCHNEİDER
+                        </h5>
+                        <p class="card-text">Ücret: 280 TL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-secondary text-light text-center py-3">
+        <p class="mb-0">&copy; 2025 Batum Elektrik <img style="width: 30px; height: 20px; border-radius: 5px;"
+                src="Resimler/LOGO2.png"> | Tüm Hakları Saklıdır</p>
+    </footer>
+
+    <a href="https://wa.me/905411258155" class="whatsapp" target="_blank">
+        <i class="bi bi-whatsapp"></i> Fiyat Bilgisi Ve Yardım İçin
+    </a>
+</body>
+<script>
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            document.getElementById('loadingOverlay').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+        }, 500);
+    });
+</script>
+
+</html>

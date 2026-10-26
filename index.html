@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batum Elektrik - Anasayfa</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.bundle.js"></script>
+    <link rel="icon" type="image/png" href="Resimler/LOGO2.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            margin: 0;
+            background: #333;
+            box-sizing: border-box;
+        }
+
+        .navbar-dark {
+            background-color: #333;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            margin: 0 8px;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+
+        .navbar-brand span {
+            color: #ffc107;
+            font-weight: bold;
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+        }
+
+        .navbar-brand img {
+            border-radius: 5px;
+        }
+
+        .giriş {
+            position: relative;
+            background: url('Resimler/ceyrancı.png') no-repeat center center/cover;
+            height: 100vh;
+
+        }
+
+        .giriş .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .giriş .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        #loadingOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            font-size: 2rem;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        #Ürünlerimiz img {
+            width: 200px;
+            height: 300px;
+            display: block;
+            margin: 0 auto;
+
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 10px;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .whatsapp:hover {
+            background-color: #1ebe5b;
+            color: white;
+        }
+
+        .card {
+            transition: all 0.3s ease;
+            transform: translateY(0);
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(255, 196, 0, 0.3);
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loadingOverlay">
+        <div class="spinner-border text-warning" role="status">
+            <span class="visually-hidden">Yükleniyor...</span>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark slide-down" id="animatedNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="Resimler/LOGO2.png" alt="Batum Elektrik" height="60" class="me-2">
+                <!--Hocam Resmi Yapay Zekaya Yaptırdım-->
+                <span>BATUM ELEKTRİK</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">ANASAYFA</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="hizmetlerDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            HİZMETLERİMİZ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="hizmetlerDropdown">
+                            <li><a class="dropdown-item" href="elektriktesisat.html">Elektrik Tesisatı</a></li>
+                            <li><a class="dropdown-item" href="aob.html">Arıza, Onarım, Bakım</a></li>
+                            <li><a class="dropdown-item" href="projeler.html">İnşaat Projeleri & Taahhüt yap</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#Ürünlerimiz">ÜRÜNLERİMİZ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#İletişim">İLETİŞİM</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-2">
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <hr style="color: white;">
+
+    <header class="Giriş">
+        <section class="giriş text-light d-flex align-items-center justify-content-center text-center">
+            <div class="overlay"></div>
+            <div class="container position-relative">
+                <h1 class="display-4 fw-bold">Güvenilir Elektrik Çözümleri</h1>
+                <p class="lead mb-4">Profesyonel kadromuzla her türlü elektrik ihtiyacınızda yanınızdayız.</p>
+                <a href="#Hizmetlerimiz" class="btn btn-warning btn-lg">Hizmetlerimizi Keşfet</a>
+            </div>
+        </Section>
+    </header>
+
+    <br>
+    <br>
+    <section id="Hizmetlerimiz" class="Hizmetlerimiz mt-3">
+        <div class="text-center">
+            <h1 class="text-warning fw-bold mb-5">Hizmetlerimiz</h1>
+        </div>
+        <div class="container mb-4">
+            <div class="row">
+                <div class="col-sm-4 mt-3 mb-3 mb-sm-2">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body text-center sa">
+                            <div class="d-flex justify-content-center align-items-center mb-2">
+                                <i class="bi bi-lightning-charge-fill text-warning me-2" style="font-size:50px;"></i>
+                                <h5 class="card-title mb-0">Elektrik Tesisatı</h5>
+                            </div>
+                            <p class="card-text">
+                                Ev, ofis ve iş yerleriniz için güvenli ve standartlara uygun tesisat, yenileme dizayn
+                                kurulumu.
+                            </p>
+                            <a href="elektriktesisat.html" class="btn btn-warning">İncele</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-4 mt-3 mb-3 mb-sm-2">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body text-center">
+                            <div class="d-flex justify-content-center align-items-center mb-2">
+                                <i class="bi bi-tools text-warning me-2" style="font-size:50px;"></i>
+                                <h5 class="card-title mb-0">Arıza , Onarım , Bakım</h5>
+                            </div>
+                            <p class="card-text">
+                                Elektrik arızaları , onarım , bakım için hızlı ve garantili Çözüm.
+                            </p>
+                            <a href="aob.html" class="btn btn-warning">İncele</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-4 mt-3 mb-3 mb-sm-2 ">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body text-center">
+                            <div class="d-flex justify-content-center align-items-center mb-2">
+                                <i class="bi bi-building text-warning me-2" style="font-size:50px;"></i>
+                                <h5 class="card-title mb-0">İnşaat Projeleri & Taahhüt</h5>
+                            </div>
+                            <p class="card-text">
+                                Endüstriyel projeler ve kurumsal çözümler için profesyonel destek.
+                            </p>
+                            <a href="projeler.html" class="btn btn-warning">İncele</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+
+    <section id="Ürünlerimiz" class="py-5 bg-light">
+        <div class="container text-center">
+            <h1 class="fw-bold text-dark mb-5">Ürünlerimiz</h1>
+            <div class="row g-4">
+
+                <div onclick="ampul()" class="col-12 col-sm-6 col-md-3">
+                    <div class="card h-100 shadow">
+                        <img src="Resimler/ampul.jpg" class="card-img-top" alt="LED Ampul">
+                        <div class="card-body text-center">
+                            <h6>LED Ampul</h6>
+                            <p class="text-muted">Enerji tasarruflu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick="sigorta()" class="col-12 col-sm-6 col-md-3">
+                    <div class="card h-100 shadow">
+                        <img src="Resimler/Sigorta.jpg" class="card-img-top img-fluid" alt="Sigorta">
+                        <div class="card-body text-center">
+                            <h6>Sigorta</h6>
+                            <p class="text-muted">Güvenli Sigorta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick="kablo()" class="col-12 col-sm-6 col-md-3">
+                    <div class="card h-100 shadow">
+                        <img src="Resimler/kablo.jpg" class="card-img-top img-fluid" alt="Kablo Çeşitleri">
+                        <div class="card-body text-center">
+                            <h6>Kablo Çeşitleri</h6>
+                            <p class="text-muted">Her ihtiyaca uygun</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div onclick="montaj()" class="col-12 col-sm-6 col-md-3">
+                    <div class="card h-100 shadow">
+                        <img src="Resimler/montajmalzemeleri.jpg" class="card-img-top img-fluid"
+                            alt="Montaj Malzemeleri">
+                        <div class="card-body text-center">
+                            <h6>Montaj Malzemeleri</h6>
+                            <p class="text-muted">Kaliteli ve modern tasarım</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="İletişim" class="py-5 mt-3">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-warning">İletişim</h2>
+                <p class="text-white">Bize ulaşın, sorularınızı yanıtlayalım</p>
+            </div>
+            <div class="row">
+                <div class="col-md-5 mb-4">
+                </div>
+                <div class="col-md-3 text-white">
+
+                    <div class="mb-4">
+                        <h5 class="d-flex align-items-center mb-2">
+                            <i class="bi bi-geo-alt text-warning me-2" style="font-size:1.2rem;"></i>
+                            Adres
+                        </h5>
+                        <p class="mb-0">Kıran Mah. Kıran Cad. Samsun/İlkadım</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="d-flex align-items-center mb-2">
+                            <i class="bi bi-telephone-fill text-warning me-2"></i>
+                            Telefon
+                        </h5>
+                        <p class="mb-0">
+                            <a href="tel:+905411258155"
+                                class="text-light text-decoration-none d-flex align-items-center mb-1">
+                                <i class="bi bi-telephone me-2 text-warning"></i>
+                                +90 541 125 81 55
+                            </a>
+                            <span class="d-flex align-items-center">
+                                <i class="bi bi-person me-2"></i> Taha Engin Batum
+                            </span>
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="d-flex align-items-center mb-2">
+                            <i class="bi bi-envelope-fill text-warning me-2"></i>
+                            E-posta
+                        </h5>
+                        <a href="mailto:batumelektrik55@gmail.com"
+                            class="text-light text-decoration-none d-flex align-items-center">
+                            <i class="bi bi-envelope me-2 text-warning"></i>
+                            batumelektrik55@gmail.com
+                        </a>
+                    </div>
+
+                    <div>
+                        <h5 class="d-flex align-items-center mb-2">
+                            <i class="bi bi-whatsapp text-success me-2" style="font-size:1.3rem;"></i>
+                            WhatsApp
+                        </h5>
+                        <a href="https://wa.me/905423967928" target="_blank"
+                            class="text-light text-decoration-none d-flex align-items-center">
+                            <i class="bi bi-whatsapp me-2 text-success" style="font-size:1.2rem;"></i>
+                            +90 542 396 79 28
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="text-white">
+
+    <footer class="bg-secondary text-light text-center py-3 animate">
+        <p class="mb-0">&copy; 2025 Batum Elektrik <img style="width: 30px; height: 20px; border-radius: 5px;"
+                src="Resimler/LOGO2.png"> | Tüm
+            Hakları Saklıdır</p>
+    </footer>
+    <a href="https://wa.me/905411258155" class="whatsapp" target="_blank">
+        <i class="bi bi-whatsapp"></i> Fiyat Bilgisi Ve Yardım İçin
+    </a>
+</body>
+<script>
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            document.getElementById('loadingOverlay').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+        }, 500);
+    });
+    function montaj(){
+        window.location.href="montajm.html"
+    }
+    function kablo(){
+        window.location.href="kablo.html"
+    }
+    function sigorta(){
+        window.location.href="sigortalar.html"
+    }
+    function ampul(){
+        window.location.href="ampul.html"
+    }
+</script>
+
+</html>

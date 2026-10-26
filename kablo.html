@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batum Elektrik - Montaj Malzemeleri</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.bundle.js"></script>
+    <link rel="icon" type="image/png" href="Resimler/LOGO2.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            margin: 0;
+            background: #333;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        .navbar-dark {
+            background-color: #333;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            margin: 0 8px;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+
+        .navbar-brand span {
+            color: #ffc107;
+            font-weight: bold;
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+        }
+
+        .card {
+            transition: all 0.3s ease;
+            transform: translateY(0);
+            background-color: #444;
+            color: white;
+            border: none;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(255, 196, 0, 0.3);
+            z-index: 2;
+        }
+
+        .card-img-top {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 10px;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .whatsapp:hover {
+            background-color: #1ebe5b;
+            color: white;
+        }
+
+        #loadingOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loadingOverlay">
+        <div class="spinner-border text-warning" role="status">
+            <span class="visually-hidden">Yükleniyor...</span>
+        </div>
+    </div>
+
+   <nav class="navbar navbar-expand-lg navbar-dark slide-down" id="animatedNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="Resimler/LOGO2.png" alt="Batum Elektrik" height="60" class="me-2">
+                <!--Hocam Resmi Yapay Zekaya Yaptırdım-->
+                <span>BATUM ELEKTRİK</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">ANASAYFA</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="hizmetlerDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            HİZMETLERİMİZ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="hizmetlerDropdown">
+                            <li><a class="dropdown-item" href="elektriktesisat.html">Elektrik Tesisatı</a></li>
+                            <li><a class="dropdown-item" href="aob.html">Arıza, Onarım, Bakım</a></li>
+                            <li><a class="dropdown-item" href="#">İnşaat Projeleri & Taahhüt yap</a></li>
+                        </ul>
+                    </li>
+
+                   
+                </ul>
+
+                <div class="d-flex align-items-center gap-2">
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <hr style="color: white;">
+
+    <div class="container my-5" id="Ürünlerimiz">
+        <h2 class="text-center mb-4">Kablo Çeşitleri</h2>
+        <div class="row g-4">
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="Resimler/hes 2.5.jpg" class="card-img-top" alt="Malzeme 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><img style="width: 20px; height: 15px;" src="Resimler/heslogo.png">
+                            <br> HES KABLO
+                        </h5>
+                        <p class="card-text">Ücret: 2500 TL</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="Resimler/hes 2.5 toprak.jpg" class="card-img-top" alt="Malzeme 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><img style="width: 20px; height: 15px;" src="Resimler/heslogo.png">
+                            <br>
+                            HES KABLO
+                        </h5>
+                        <p class="card-text">Ücret: 2500 TL</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="Resimler/3x2.5.avif" class="card-img-top" alt="Malzeme 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><img style="width: 40px; height: 15px ;" src="Resimler/oznur-kablo.png">
+                            <br>
+                            ÖZNUR KABLO
+                        </h5>
+                        <p class="card-text">Ücret: 6000 TL</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="https://www.volttrend.com/idea/mi/01/myassets/products/018/2-5-nya-oznur-tumu.png?revision=1734013284"
+                        class="card-img-top" alt="Malzeme 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><img style="width: 60px; height: 15px; " src="Resimler/oznur-kablo.png">
+                            <br>
+                            OZNUR KABLO
+                        </h5>
+                        <p class="card-text">Ücret: 8500 TL</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="https://www.buyukalpler.com.tr/idea/il/23/myassets/products/466/oznur-2-5-nya-kablo-mavi-100-metre-550x550.jpg?revision=1713768814"
+                        class="card-img-top" alt="Malzeme 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><img style="width: 60px; height: 15px; " src="Resimler/oznur-kablo.png">
+                            <br>
+                            OZNUR KABLO
+                        </h5>
+                        <p class="card-text">Ücret: 2750 TL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-secondary text-light text-center py-3">
+        <p class="mb-0">&copy; 2025 Batum Elektrik <img style="width: 30px; height: 20px; border-radius: 5px;"
+                src="Resimler/LOGO2.png"> | Tüm Hakları Saklıdır</p>
+    </footer>
+
+    <a href="https://wa.me/905411258155" class="whatsapp" target="_blank">
+        <i class="bi bi-whatsapp"></i> Fiyat Bilgisi Ve Yardım İçin
+    </a>
+</body>
+<script>
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            document.getElementById('loadingOverlay').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+        }, 500);
+    });
+</script>
+
+</html>

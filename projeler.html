@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATUM ELEKTRİK - İNŞAAT PROJELERİ</title>
+    <script src="bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="icon" type="image/png" href="Resimler/LOGO2.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            margin: 0;
+            background: #333;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar-dark {
+            background-color: #333;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            margin: 0 8px;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+
+        .navbar-brand span {
+            color: #ffc107;
+            font-weight: bold;
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            color: #000;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background: #6c757d;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 10px;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .whatsapp:hover {
+            background-color: #1ebe5b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="Resimler/LOGO2.png" alt="Batum Elektrik" height="60" class="me-2">
+                <span>BATUM ELEKTRİK</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">ANASAYFA</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            HİZMETLERİMİZ
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="elektriktesisat.html">Elektrik Tesisatı</a></li>
+                            <li><a class="dropdown-item" href="aob.html">Arıza, Onarım, Bakım</a></li>
+                            <li><a class="dropdown-item active" href="insaatprojeleri.html">İnşaat Projeleri & Taahhüt</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <hr style="color:white;">
+
+    <div class="container py-5">
+        <h2 class="text-center mb-5">İnşaat Projeleri & Taahhüt Hizmetleri</h2>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="Resimler/eprojesi.png" class="img-fluid rounded shadow" style="width: 600px; height: 350px;">
+            </div>
+            <div class="col-md-6 text-light">
+                <h3>Elektrik Projelendirme</h3>
+                <p>İnşaat projeleriniz için tüm elektrik altyapısını projelendiriyoruz.</p>
+                <ul>
+                    <li>Mimari projeye uygun elektrik planları</li>
+                    <li>Keşif – metraj – proje çizimi</li>
+                    <li>Yük hesaplamaları & pano projeleri</li>
+                </ul>
+                <div class="p-3 mt-3 bg-light border-start border-4 border-warning rounded text-dark">
+                    <strong>Neden bizi seçmelisiniz?</strong>
+                    <p>Projenin başından sonuna kadar teknik destek sunuyoruz.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5 flex-md-row-reverse">
+            <div class="col-md-6">
+                <img src="Resimler/montajel.jpg" class="img-fluid rounded shadow" style="width: 600px; height: 350px;">
+            </div>
+            <div class="col-md-6 text-light">
+                <h3>İnşaat Elektrik Montajı</h3>
+                <p>Temelden anahtar teslimine kadar tüm elektrik montaj işleri.</p>
+                <ul>
+                    <li>Kablo döşeme – borulama – buat montaj</li>
+                    <li>Zayıf akım kablolama</li>
+                    <li>Test – ölçüm – kontrol</li>
+                </ul>
+                <div class="p-3 mt-3 bg-light border-start border-4 border-warning rounded text-dark">
+                    <strong>Kaliteli malzeme & temiz işçilik</strong>
+                    <p>Her aşamada uygunluk standartlarına göre montaj yapılır.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="Resimler/aob3.jpg" class="img-fluid rounded shadow" style="width: 600px; height: 350px;">
+            </div>
+            <div class="col-md-6 text-light">
+                <h3>Pano Kurulumu & Sigorta Montajı</h3>
+                <p>Proje için gerekli tüm panoları profesyonel şekilde kuruyoruz.</p>
+                <ul>
+                    <li>Dağıtım panosu</li>
+                    <li>Otomasyon panosu</li>
+                    <li>Sigorta – kaçak akım – röle bağlantıları</li>
+                </ul>
+                <div class="p-3 mt-3 bg-light border-start border-4 border-warning rounded text-dark">
+                    <strong>Güvenlik önceliğimizdir.</strong>
+                    <p>Tüm montajlar elektrik yönetmeliklerine uygun yapılır.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5 flex-md-row-reverse">
+            <div class="col-md-6">
+                <img src="Resimler/ledpsot.png" class="img-fluid rounded shadow" style="width: 600px; height: 350px;">
+            </div>
+            <div class="col-md-6 text-light">
+                <h3>Aydınlatma Projesi & Uygulama</h3>
+                <p>Projenize özel ışıklandırma tasarımı ve uygulaması.</p>
+                <ul>
+                    <li>LED – spot – hareket sensörlü sistemler</li>
+                    <li>Dış cephe aydınlatma</li>
+                    <li>Enerji tasarrufu çözümleri</li>
+                </ul>
+                <div class="p-3 mt-3 bg-light border-start border-4 border-warning rounded text-dark">
+                    <strong>Profesyonel çözüm.</strong>
+                    <p>Hem estetik hem tasarruf sağlayan ışık planları.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2025 Batum Elektrik
+        <img src="Resimler/LOGO2.png" style="width:30px;height:20px;border-radius:5px;">
+        | Tüm Hakları Saklıdır
+    </footer>
+
+    <a href="https://wa.me/905411258155" class="whatsapp" target="_blank">
+        <i class="bi bi-whatsapp"></i> Fiyat Bilgisi & Yardım İçin
+    </a>
+
+</body>
+
+</html>
